@@ -1,0 +1,5 @@
+WePickaxe is a privacy-first product studio building photo intelligence for modern apps. Our team
+creates on-device workflows that help people clean, curate, and protect their memories without
+sending personal images to the cloud. We are best known for Keeply, an iPhone app that finds
+duplicates and low-quality shots so users can keep what matters most. WePickaxe partners with
+product teams to deliver respectful, human-centered photo experiences.
