@@ -510,11 +510,12 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     max-width: 100%;
     overflow: visible;
+    padding: clamp(20px, 3vw, 40px);
 }
 
 .phone-container {
     position: relative;
-    padding: clamp(12px, 2.5vw, 24px);
+    padding: clamp(20px, 3vw, 40px);
     isolation: isolate;
 }
 
@@ -522,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
     --screen-top: 6.5%;
     --screen-side: 8.2%;
     --screen-bottom: 6.8%;
-    width: clamp(220px, 22vw, 290px);
+    width: clamp(240px, 24vw, 320px);
     aspect-ratio: 364 / 750;
     position: relative;
     display: grid;
@@ -559,7 +560,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 18px 8px;
+    padding: 14px 20px 8px;
     color: var(--color-text);
 }
 
@@ -572,7 +573,7 @@ h1, h2, h3, h4, h5, h6 {
 .status-icons {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 10px;
 }
 
 .status-signal, .status-wifi {
@@ -783,25 +784,25 @@ h1, h2, h3, h4, h5, h6 {
 .floating-badge {
     position: absolute;
     background: white;
-    padding: 8px 12px;
+    padding: 10px 16px;
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     z-index: 4;
     animation: floatBadge 5s ease-in-out infinite;
 }
 
 .floating-badge-1 {
-    top: 125px;
-    left: -10px;
+    top: 100px;
+    left: -20px;
     animation-delay: 0s;
 }
 
 .floating-badge-2 {
-    bottom: 115px;
-    right: -10px;
+    bottom: 100px;
+    right: -20px;
     animation-delay: 2.5s;
 }
 
@@ -811,11 +812,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-icon {
-    font-size: 1rem;
+    font-size: 1.125rem;
 }
 
 .badge-text {
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     font-weight: 500;
     color: var(--color-text);
     white-space: nowrap;
@@ -1608,28 +1609,28 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .phone-container {
-        padding: 16px;
+        padding: 24px;
     }
-    
+
     .phone {
-        width: clamp(230px, 40vw, 300px);
+        width: clamp(250px, 42vw, 320px);
         --screen-top: 6.3%;
         --screen-side: 7.9%;
         --screen-bottom: 6.5%;
     }
-    
+
     .phone-screen {
         border-radius: 26px;
     }
-    
+
     .floating-badge-1 {
-        left: 6px;
-        top: 32px;
+        left: -10px;
+        top: 60px;
     }
-    
+
     .floating-badge-2 {
-        right: 6px;
-        bottom: 48px;
+        right: -10px;
+        bottom: 70px;
     }
     
     .about-grid {
@@ -1698,17 +1699,22 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .hero-visual {
-        margin-top: var(--space-md);
+        margin-top: var(--space-lg);
+        padding: clamp(16px, 2.5vw, 32px);
+    }
+
+    .phone-container {
+        padding: 20px;
     }
 
     .phone {
-        width: clamp(210px, 55vw, 280px);
+        width: clamp(230px, 60vw, 300px);
     }
-    
+
     .hero-scroll {
         display: none;
     }
-    
+
     .floating-badge {
         display: none;
     }
@@ -1768,15 +1774,19 @@ h1, h2, h3, h4, h5, h6 {
         --space-3xl: 3.5rem;
     }
     
+    .phone-container {
+        padding: 16px;
+    }
+
     .phone {
-        width: 190px;
+        width: 210px;
         --screen-top: 6.1%;
         --screen-side: 7.6%;
         --screen-bottom: 6.2%;
     }
-    
+
     .phone-screen {
-        border-radius: 20px;
+        border-radius: 22px;
     }
     
     .hero-actions {
