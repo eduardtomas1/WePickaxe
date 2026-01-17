@@ -53,13 +53,13 @@
     <nav class="nav" id="nav">
         <div class="nav-inner">
             <a href="#" class="nav-logo">
-                <img src="resources/logo-pickaxe.png" alt="WePickaxe Logo" class="nav-logo-img">
+                <img src="resources/FaviconPickaxe.png" alt="WePickaxe Logo" class="nav-logo-img">
                 <span class="nav-logo-text">WePickaxe</span>
             </a>
             <div class="nav-links">
                 <a href="#about" class="nav-link">About</a>
                 <a href="#products" class="nav-link">Products</a>
-                <a href="#stats" class="nav-link">Our Journey</a>
+                <a href="#faq" class="nav-link">FAQ</a>
                 <a href="#contact" class="nav-link nav-link-cta">Let's Talk</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
@@ -74,7 +74,7 @@
         <div class="mobile-menu-inner">
             <a href="#about" class="mobile-menu-link">About</a>
             <a href="#products" class="mobile-menu-link">Products</a>
-            <a href="#stats" class="mobile-menu-link">Our Journey</a>
+            <a href="#faq" class="mobile-menu-link">FAQ</a>
             <a href="#contact" class="mobile-menu-link">Let's Talk</a>
         </div>
     </div>
@@ -417,18 +417,84 @@
         </div>
     </section>
 
-    <section class="tech">
+    <section class="faq" id="faq">
         <div class="container">
-            <div class="tech-content reveal-up">
-                <span class="section-label">Our Stack</span>
-                <h3 class="tech-title">Built with modern tools</h3>
-                <div class="tech-tags">
-                    <span class="tech-tag">Swift</span>
-                    <span class="tech-tag">SwiftUI</span>
-                    <span class="tech-tag">CoreML</span>
-                    <span class="tech-tag">CoreImage</span>
-                    <span class="tech-tag">Photos Framework</span>
-                    <span class="tech-tag">MVVM</span>
+            <div class="faq-header">
+                <span class="section-label reveal-up">FAQ</span>
+                <h2 class="section-title reveal-up delay-1">Questions?<br><span class="text-gradient">We've got answers</span></h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item reveal-up delay-1">
+                    <div class="faq-question">
+                        <h3>What is WePickaxe?</h3>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>WePickaxe is an independent app studio dedicated to creating meaningful iOS applications. We're passionate developers who believe in building software that respects users and solves real problems. Every app we create is crafted with care, privacy-first principles, and attention to detail.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-up delay-2">
+                    <div class="faq-question">
+                        <h3>What apps do you make?</h3>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our flagship product is Keeply, a smart photo cleanup app for iOS that helps you declutter your photo library by detecting duplicates, blurry shots, and low-quality images. We've created 8 apps total with over 47,500 downloads. We focus on utility apps that make your digital life easier while protecting your privacy.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-up delay-3">
+                    <div class="faq-question">
+                        <h3>When will Keeply be available?</h3>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Keeply is currently in development and coming soon to the iOS App Store. We're taking our time to ensure it meets our high standards for quality and user experience. Want to be notified when we launch? Sign up through our contact form and select "Keeply launch notification."</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-up delay-4">
+                    <div class="faq-question">
+                        <h3>How do you handle privacy?</h3>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Privacy is at the core of everything we build. All processing in our apps happens 100% on-device — your data never leaves your phone. No cloud uploads, no tracking, no data collection. We don't have access to your photos, and we never will. Your privacy isn't a feature; it's a fundamental right.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-up delay-5">
+                    <div class="faq-question">
+                        <h3>Are your apps free?</h3>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer both free and pro versions of our apps. The free version provides core functionality for everyone, while the pro version unlocks advanced features for power users and enthusiasts. No hidden fees, no subscriptions that auto-renew without warning — just transparent, honest pricing.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item reveal-up delay-6">
+                    <div class="faq-question">
+                        <h3>Can I collaborate with WePickaxe?</h3>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We love hearing from fellow dreamers and creators! Whether you have an app idea to share, want to collaborate on a project, or just want to chat about indie development, we're all ears. Reach out through our contact form and let's start a conversation.</p>
+                    </div>
                 </div>
             </div>
         </div>
