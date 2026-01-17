@@ -382,7 +382,8 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     position: relative;
-    padding: calc(var(--space-2xl) + 40px) 0 var(--space-xl);
+    padding: 75px 10px 10px 10px;
+    /*padding: calc(var(--space-2xl) + 40px) 0 var(--space-xl);*/
     overflow: hidden;
 }
 
@@ -572,17 +573,17 @@ h1, h2, h3, h4, h5, h6 {
 .status-icons {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .status-signal, .status-wifi {
-    width: 18px;
+    width: 14px;
     height: 14px;
     fill: #1C1C28;
 }
 
 .status-battery {
-    width: 26px;
+    width: 20px;
     height: 12px;
     border: 1.5px solid #1C1C28;
     border-radius: 3px;
@@ -794,7 +795,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .floating-badge-1 {
-    top: 80px;
+    top: 125px;
     left: -30px;
     animation-delay: 0s;
 }
