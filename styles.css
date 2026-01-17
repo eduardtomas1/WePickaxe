@@ -376,11 +376,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-    min-height: 90vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     position: relative;
-    padding: calc(var(--space-2xl) + 60px) 0 var(--space-2xl);
+    padding: calc(var(--space-2xl) + 40px) 0 var(--space-xl);
     overflow: hidden;
 }
 
@@ -425,8 +425,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: var(--space-xl);
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: var(--space-lg);
     align-items: center;
     position: relative;
     z-index: 1;
@@ -506,11 +506,13 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     position: relative;
     z-index: 2;
+    max-width: 100%;
+    overflow: visible;
 }
 
 .phone-container {
     position: relative;
-    padding: 40px;
+    padding: 20px;
     isolation: isolate;
 }
 
@@ -518,7 +520,7 @@ h1, h2, h3, h4, h5, h6 {
     --screen-top: 6.5%;
     --screen-side: 8.2%;
     --screen-bottom: 6.8%;
-    width: clamp(220px, 24vw, 300px);
+    width: clamp(200px, 20vw, 260px);
     aspect-ratio: 364 / 750;
     position: relative;
     display: grid;
@@ -779,25 +781,25 @@ h1, h2, h3, h4, h5, h6 {
 .floating-badge {
     position: absolute;
     background: white;
-    padding: 10px 16px;
-    border-radius: var(--radius-lg);
+    padding: 8px 12px;
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-md);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     z-index: 4;
     animation: floatBadge 5s ease-in-out infinite;
 }
 
 .floating-badge-1 {
-    top: 60px;
-    left: -20px;
+    top: 40px;
+    left: -10px;
     animation-delay: 0s;
 }
 
 .floating-badge-2 {
-    bottom: 80px;
-    right: -30px;
+    bottom: 60px;
+    right: -10px;
     animation-delay: 2.5s;
 }
 
@@ -807,13 +809,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-icon {
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 .badge-text {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: var(--color-text);
+    white-space: nowrap;
 }
 
 .hero-scroll {
