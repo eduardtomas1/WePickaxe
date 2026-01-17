@@ -115,7 +115,7 @@
                 <div class="hero-visual reveal-scale delay-2">
                     <div class="phone-container">
                         <div class="phone">
-                            <div class="phone-speaker"></div>
+                            <img src="resources/phoneFrame.png" alt="Phone frame" class="phone-frame">
                             <div class="phone-screen">
                                 <div class="screen-statusbar">
                                     <span class="status-time">9:41</span>
@@ -127,23 +127,49 @@
                                 </div>
                                 <div class="screen-content">
                                     <div class="app-header">
-                                        <img src="resources/logo-keeply.png" alt="Keeply" class="app-logo">
+                                        <div class="app-logo-wrap">
+                                            <img src="resources/logo-keeply.png" alt="Keeply" class="app-logo">
+                                        </div>
                                         <div class="app-title">Keeply</div>
-                                        <div class="app-subtitle">Coming Soon to iOS</div>
+                                        <div class="app-subtitle">Smart photo cleanup</div>
+                                    </div>
+                                    <div class="app-summary">
+                                        <span class="summary-label">Potential space</span>
+                                        <span class="summary-value">2.4 GB</span>
+                                        <span class="summary-sub">128 items ready to review</span>
                                     </div>
                                     <div class="app-cards">
                                         <div class="app-card">
                                             <div class="card-icon">
                                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
                                             </div>
-                                            <span>12 duplicates</span>
+                                            <div class="card-text">
+                                                <span class="card-title">Duplicates</span>
+                                                <span class="card-meta">12 found</span>
+                                            </div>
                                         </div>
                                         <div class="app-card">
                                             <div class="card-icon">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15l6-6 4 4 6-6"/><path d="M3 19h18"/></svg>
+                                            </div>
+                                            <div class="card-text">
+                                                <span class="card-title">Blurry shots</span>
+                                                <span class="card-meta">8 to remove</span>
+                                            </div>
+                                        </div>
+                                        <div class="app-card app-card-accent">
+                                            <div class="card-icon">
                                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                                             </div>
-                                            <span>100% Private</span>
+                                            <div class="card-text">
+                                                <span class="card-title">Private by design</span>
+                                                <span class="card-meta">On-device only</span>
+                                            </div>
                                         </div>
+                                    </div>
+                                    <div class="app-chips">
+                                        <span class="app-chip">Auto-scan</span>
+                                        <span class="app-chip">Favorites safe</span>
                                     </div>
                                 </div>
                                 <div class="screen-homebar"></div>
