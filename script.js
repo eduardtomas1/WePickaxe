@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initFormHandler();
     initParallax();
+    initFAQ();
 });
 
 function initNavigation() {
@@ -256,15 +257,35 @@ function initFormHandler() {
 
 function initParallax() {
     const heroShapes = document.querySelectorAll('.hero-shape');
-    
+
     if (window.innerWidth < 1024) return;
-    
+
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
-        
+
         heroShapes.forEach((shape, index) => {
             const speed = 0.05 + (index * 0.03);
             shape.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+    });
+}
+
+function initFAQ() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+            });
+
+            if (!isActive) {
+                item.classList.add('active');
+            }
         });
     });
 }
