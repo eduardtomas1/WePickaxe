@@ -510,12 +510,11 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     max-width: 100%;
     overflow: visible;
-    padding: clamp(20px, 3vw, 40px);
 }
 
 .phone-container {
     position: relative;
-    padding: clamp(20px, 3vw, 40px);
+    padding: clamp(8px, 1.5vw, 16px);
     isolation: isolate;
 }
 
@@ -523,7 +522,7 @@ h1, h2, h3, h4, h5, h6 {
     --screen-top: 6.5%;
     --screen-side: 8.2%;
     --screen-bottom: 6.8%;
-    width: clamp(240px, 24vw, 320px);
+    width: clamp(260px, 26vw, 340px);
     aspect-ratio: 364 / 750;
     position: relative;
     display: grid;
@@ -560,12 +559,12 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 20px 8px;
+    padding: 16px 22px 10px;
     color: var(--color-text);
 }
 
 .status-time {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     font-family: var(--font-heading);
 }
@@ -573,18 +572,18 @@ h1, h2, h3, h4, h5, h6 {
 .status-icons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 .status-signal, .status-wifi {
-    width: 16px;
-    height: 12px;
+    width: 18px;
+    height: 14px;
     fill: #1C1C28;
 }
 
 .status-battery {
-    width: 24px;
-    height: 11px;
+    width: 26px;
+    height: 12px;
     border: 1.5px solid #1C1C28;
     border-radius: 3px;
     padding: 1.5px;
@@ -784,25 +783,25 @@ h1, h2, h3, h4, h5, h6 {
 .floating-badge {
     position: absolute;
     background: white;
-    padding: 10px 16px;
+    padding: 12px 18px;
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     z-index: 4;
     animation: floatBadge 5s ease-in-out infinite;
 }
 
 .floating-badge-1 {
-    top: 100px;
-    left: -20px;
+    top: 80px;
+    left: -30px;
     animation-delay: 0s;
 }
 
 .floating-badge-2 {
-    bottom: 100px;
-    right: -20px;
+    bottom: 90px;
+    right: -30px;
     animation-delay: 2.5s;
 }
 
@@ -812,12 +811,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .badge-icon {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
+    line-height: 1;
 }
 
 .badge-text {
-    font-size: 0.875rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: 600;
     color: var(--color-text);
     white-space: nowrap;
 }
@@ -1609,11 +1609,11 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .phone-container {
-        padding: 24px;
+        padding: 12px;
     }
 
     .phone {
-        width: clamp(250px, 42vw, 320px);
+        width: clamp(270px, 45vw, 350px);
         --screen-top: 6.3%;
         --screen-side: 7.9%;
         --screen-bottom: 6.5%;
@@ -1624,13 +1624,13 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .floating-badge-1 {
-        left: -10px;
+        left: -20px;
         top: 60px;
     }
 
     .floating-badge-2 {
-        right: -10px;
-        bottom: 70px;
+        right: -20px;
+        bottom: 80px;
     }
     
     .about-grid {
@@ -1700,15 +1700,14 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero-visual {
         margin-top: var(--space-lg);
-        padding: clamp(16px, 2.5vw, 32px);
     }
 
     .phone-container {
-        padding: 20px;
+        padding: 10px;
     }
 
     .phone {
-        width: clamp(230px, 60vw, 300px);
+        width: clamp(240px, 62vw, 310px);
     }
 
     .hero-scroll {
@@ -1775,18 +1774,18 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .phone-container {
-        padding: 16px;
+        padding: 8px;
     }
 
     .phone {
-        width: 210px;
+        width: 220px;
         --screen-top: 6.1%;
         --screen-side: 7.6%;
         --screen-bottom: 6.2%;
     }
 
     .phone-screen {
-        border-radius: 22px;
+        border-radius: 24px;
     }
     
     .hero-actions {
